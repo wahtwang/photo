@@ -2,17 +2,17 @@
 
 随便打开一个百度页面，不管是按 `ctrl+f5` 与 启用 `Disable cache` 选项还是会出现从内存中读取文件的现象。
 
-![1556770824309](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1556770824309.png)
+![1556770824309](1556770824309.png)
 
 打开 csdn 的一个博客网站，启用`Disable cache`也会出现与上例相似的现象，并且单独按`ctrl+f5`后有更多文件被从缓存读取。
 
 ##### Disable cache
 
-![1556771334594](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1556771334594.png)
+![1556771334594](1556771334594.png)
 
 ##### ctrl+f5
 
-![1556771636308](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1556771636308.png)
+![1556771636308](1556771636308.png)
 
 ## 答案
 
@@ -46,7 +46,7 @@
 
 原来在百度中发现的从缓存读取的文件都是`base64`格式的图片文件
 
-![1556777695903](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1556777695903.png)
+![1556777695903](1556777695903.png)
 
 其依附在其他文件中从服务器请求到客户端，并在构建dom树的时候在内存中加载并解析。完毕后从内存中拿出来，就出现了强缓存的假相。
 
